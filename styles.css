@@ -23,7 +23,6 @@ html{
     overflow-x: hidden;
     scroll-padding-top: 6rem;
     scroll-behavior: smooth;
-    background: #999;
 }
 /* header */
 header{
@@ -31,7 +30,7 @@ header{
     top: 0;
     left: 0;
     right: 0;
-    background:transparent;
+    background:#999;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -70,8 +69,9 @@ header .navbar a:hover{
     color: #fff;
     padding: .8rem 3rem;
     cursor: pointer;
-    font-size: 1.3rem;
-    text-transform: uppercase;
+    font-size: 1.5rem;
+    text-transform: bolder;
+    border-radius: .5rem;
 }
 .btn1{
     background: #eed529;
@@ -116,12 +116,211 @@ header .navbar a:hover{
     font-weight: lighter;
 }
 
-body{
-    height: 500rem;
+.heading{
+    text-align: center;
+    padding: 2.5rem;
+    font-size: 4.2rem;
+    color: #000;
+    padding: 7rem 3.2rem 1rem;
+    text-transform: capitalize;
+}
+.welcome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .3rem 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding: 5.2rem 14rem;
+    text-transform: none;
+}
+.welcome p{
+    font-size: 2.5rem;
+    padding: 2rem 2rem 0rem 5rem;
+    font-weight: lighter;
+}
+.welcome img{
+    width: 30%;
+}
+.welcome.box-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    margin: 0rem 11rem;
+    padding: 0 4rem;
+}
+.welcome.box-container .box{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    padding: 4rem;
+    text-align: center;
+    margin: 2rem
+}
+.welcome.box-container .box img{
+    padding: 1rem;
+    font-size: 5rem;
+    
+}
+.welcome.box-container .box h3{
+    font-size: 2.5rem;
+    color: rgb(150, 3, 150);
+}
+.welcome.box-container .box p{
+    font-size: 1.5rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.welcome.box-container .box:hover{
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
 }
 
 
+/* projects */
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    border-style: inset;
+    border-width: .1rem;
+  }
+.projects .heading{
+    padding: 4rem 1.2rem 4rem;
+}
+.projects .box-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.projects .box-container .box{
+    flex: 1 1 30rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    background:rgb(219, 219, 219);
+}
+.projects .box-container .box img{
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+}
+.projects .box-container .box .content{
+    padding: 2rem;
+    text-align: left;
+}
+.projects .box-container .box .content h3{
+    font-size: 2rem;
+    color: #333;
+}
+.projects .box-container .box .content h3 i{
+    color: var(--orange);
+}
+.projects .box-container .box .content p{
+    font-size: 1.7rem;
+    color: #666;
+    padding: 1rem 0;
+}
+.projects .box-container .box:hover{
+    background: #fff092;
+}
 
+/* pricing */
+.pricing .box-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    margin: 2rem 20rem;
+}
+.pricing .box-container .box{
+    flex: 1 1 30rem;
+    border-radius: 3rem;
+    overflow: hidden;
+    /* background:rgb(219, 219, 219); */
+    border-left:.1rem solid purple;
+    border-right:.1rem solid purple;
+}
+.pricing .box-container .box .content{
+    padding: 2rem;
+    line-height: 3.5rem;
+}
+.pricing .box-container .box .content h3{
+    font-size: 2rem;
+    color: purple;
+}
+.pricing .box-container .box .content span{
+    padding: 1rem 0;
+    font-size: 1.7rem;
+    justify-content: center;
+    color: #999;
+}
+.pricing .box-container .box .content p{
+    font-size: 1.7rem;
+    color: rgb(160, 1, 160);
+    padding: 1rem 0;
+}
+
+/* video projects */
+/* .videos{
+    background: purple;
+}
+.videos .heading{
+    color: #fff;
+}
+.videos .review-slider{
+    padding-bottom: 2rem;
+}
+.videos .box{
+    padding: 2rem;
+    text-align: center;
+    box-shadow:0 1rem 2rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+.videos .box video{
+    width: 35%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+} */
+
+
+/* .videos{
+    background: purple;
+} */
+
+.review .heading{
+    color: purple;
+}
+.review .review-slider{
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: row;
+}
+.review .box{
+    padding: 2rem;
+    text-align: center;
+    box-shadow:0 1rem 2rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+}
+.review .box img{
+    height: 13rem;
+    width: 13rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+.review .box h3{
+    color: #333;
+    font-size: 2.5rem;
+}
+.review .box p{
+    color: #666;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.review .box .stars i{
+    color: var(--color);
+    font-size: 1.7rem;
+}
 
 
 
