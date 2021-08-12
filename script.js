@@ -17,7 +17,6 @@ var swiper = new Swiper(".review-slider", {
     loop: true,
     autoplay: {
         delay: 2500,
-        // disableOnIntreaction: false,
     },
     breakpoints: {
         640: {
@@ -31,3 +30,23 @@ var swiper = new Swiper(".review-slider", {
         },
     },
 });
+
+var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 10,
+    slidesPerView: 5,
+    loop: true,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+  var swiper2 = new Swiper(".mySwiper2", {
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    thumbs: {
+      swiper: swiper,
+    },
+  });
